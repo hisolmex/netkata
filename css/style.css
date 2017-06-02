@@ -164,8 +164,29 @@ h4.newslatter-h4 {
     /* display: block; */
     margin: 0;
 }
+i.fa {
+	color: #4d565d;
+}
+.icon {
+    font-size: 29px;
+    background:	none;
+    border-radius: 50%;
+	border: 1px solid #4d565d;
+    padding: 10px 15px;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.icon:hover {
+	background: rgba(229, 190, 80, 0.62);
+}
 .btn-box {
 	display: inline-block;
+}
+.btn-box2 {
+	display: inline-block;
+	float: right;
 }
 .border {
 	border-right: 1px solid rgba(137, 145, 151, 0.21);
@@ -197,6 +218,7 @@ h4.newslatter-h4 {
     background-image: URL(../img/bulgaria.jpg);
     background-size: cover;
     background-position: center;
+
 }
 .welcome-filter {
 	background: red;
@@ -233,6 +255,9 @@ p.welcome-p2 {
 	text-transform: uppercase;
 	text-align: left;
 }
+.welcome.col-6 {
+
+}
 .news-img-box {
     max-width: 420px;
     display: inline-block;
@@ -256,6 +281,9 @@ p.welcome-p1 {
 .hero {
 	min-height: 1131px;
 	background: white;
+	background-image: URL(../img/screen.png);
+    background-size: cover;
+    background-position: center;
 }
 h1 {
 	font-size: 80px;
@@ -327,7 +355,12 @@ small.hero-small {
 	small.hero-small {
 		font-size: 42px;
 	}
-	
+	.btn2  {
+		height: 150px;
+		width: 150px;
+		font-size: 27px;
+		padding: 36px 30px;
+	}
 	header>nav>ul>li>a {
 		line-height: 55px;
 	}
@@ -380,10 +413,26 @@ small.hero-small {
 		min-width: 0;
 	}
 }
+
+@media (max-width: 730px) {
+	h3.news-h3 {
+		font-size: 40px;
+	}
+	.news .col-6 {
+		display: block;
+		width: 100%;
+	}
+	.news-img {
+		display: none;
+	}
+}
 @media (max-width: 500px) {
 	.newslatter .col-4 {
 		display: block;
 		width: 100%;
+	}
+	h3.news-h3 {
+		font-size: 34px;
 	}
 	header>nav>ul>li>a {
 		line-height: 38px;
